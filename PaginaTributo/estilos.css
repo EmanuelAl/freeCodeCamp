@@ -1,0 +1,76 @@
+html {
+   /* Establecer un tamaño de fuente base de 10px nos facilita cálculos rem
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px (and so forth)/(Etcétera)
+   */
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  background: #fff;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+@media (max-width:460px) {
+  h1{
+      font-size: 3.25rem;
+      line-height: 1.2;
+  }
+}
+a {
+  color:#1D899F;
+}
+/* color del enlace cuando es visitado*/
+a:visited {
+  color:#6A29AD;
+}
+#main {
+  margin: 30px 10px;
+  padding: 10px;
+  background: #EDB95E;
+  border-radius: 5px;
+}
+img {/* hacemos la imagen responsive y la centramos con display block y margin en auto a sus costados.*/
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#img-div {
+  background: #DAAB54;
+  padding : 10px;
+}
+#img-caption {
+  margin: 13px 0  5px  0;
+}
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+li {
+  margin: 10px 0;
+}
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left; 
+}
