@@ -1,0 +1,159 @@
+@import url ('https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap');
+
+:root {
+	--color-white:#F0E9E9;
+	--color-rosado:#F0432C;
+	--color-darkblue:rgba(4, 4, 80, 0.8);
+	--color-green:#33B859;
+}
+*,*::before,*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	color:var(--color-white);
+	line-height: 1.4;
+	margin:0;
+}
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+	background: var(--color-rosado);
+	background-image: linear-gradient(180deg,rgba(25,100,25,0.6),rgba(25,150,30,0.8)) ,
+	url(https://image.freepik.com/vector-gratis/encuesta-investigacion-haga-eleccion-tableta-plantillas-lista-verificacion_80328-189.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1{
+	font-weight: 400;
+	line-height: 1.2;
+}
+p {
+	font-size: 1.125rem;
+}
+
+h1, p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	font-size: 1.125rem;
+	margin-bottom: 0.5rem;
+}
+
+input,button,select,textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button {
+	border: none;
+}
+
+.header {
+	padding: 0  0.625rem; 
+	margin-bottom: 4rem;
+}
+
+.pista {
+	margin-left: 0.2rem;
+	font-size: 0.9rem;
+}
+.description {
+	font-style: italic;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+	margin: 3.25rem  auto  0  auto;
+}
+
+@media (min-width: 570px){
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px){
+	.container {
+		max-width: 720px;
+	}
+}
+
+/*formulario*/
+form {
+	background: var(--color-darkblue);
+	padding: 2.5rem 0.6rem;
+	border-radius: 0.25rem;
+}
+@media (min-width: 480px){
+	form {
+		padding: 2.5rem;
+	}
+}
+
+.form-group {
+	margin: 0 auto 1.25rem auto;
+	padding: 0.25rem;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 2.325rem;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ADA3A3;
+	border-radius: 0.2rem;
+	transition: border-color 0.15s ease-in-out,box-shadow 0.15s  ease-in-out;
+
+}
+.form-control:focus {
+	border-color: #C2EB04;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(247, 247, 29, 0.8);
+}
+
+.input-radio, .input-checkbox {
+	display: inline-block;
+	margin-right: 0.6rem;
+	min-width: 1.125rem;
+	min-height: 1.125rem;
+}
+.input-textarea {
+	width: 100%;
+	min-height: 120px;
+	padding: 0.625rem;
+	resize: vertical;/* none|horizontal|vertical|both *//* valores que habilitan o deshabilitan el redimensionamiento del tamaño del textarea*/
+}
+
+.submit-button {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	background: var(--color-green);
+	border-radius: 0.2rem;
+	color: inherit;
+	cursor:pointer;
+}

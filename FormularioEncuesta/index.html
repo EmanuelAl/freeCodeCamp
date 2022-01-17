@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Formulario de encuesta</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 id="title" class="text-center">Formulario de encuesta</h1>
+			<p id="description" class="description text-center">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma</p>
+		</header>
+		<form action="#" id="survey-form">
+			<div class="form-group">
+				<label for="name" id="name-label">Name</label>
+				<input type="text" id="name"  placeholder="Ingrese su nombre" class="form-control" required="" >
+			</div>
+			<div class="form-group">
+				<label for="email" id="email-label">Email</label>
+				<input type="email" id="email"  placeholder="Ingrese su correo" class="form-control" required="">
+			</div>
+			<div class="form-group">
+				<label for="number" id="number-label">Edad <span class="pista">(opcional)</span></label>
+				<input type="number" id="number" name="edad" placeholder="Edad" min="10" max="99" class="form-control">
+			</div>
+			<div class="form-group">
+				<p>¿Qué opción describe mejor su función actual?</p>
+				<select name="rol" id="dropdown" class="form-control" required>
+					<option disabled selected value>elija su funcion actual</option><!--  poniendo disabled selected value , ya es una opcion que no se puede elegir-->
+					<option value="estudiante">Estudiante</option>
+					<option value="superheroe">Superheroe</option>
+					<option value="empleado">Empleado</option>
+					<option value="desocupado">Desocupado</option>
+					<option value="PreferNo">Prefiero no decir</option>
+					<option value="otros">Otros</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>¿Qué tan fácil fue navegar en nuestro sitio web?</p>		
+				<label ><input type="radio" name="navegarSitio"  value="muy-facil"  class="input-radio" >Muy fácil</label>
+				<label ><input type="radio" name="navegarSitio"  value="facil"  class="input-radio" >Fácil</label>
+				<label ><input type="radio" name="navegarSitio"  value="neutral"  class="input-radio" >Neutral</label>
+				<label ><input type="radio" name="navegarSitio"  value="dificil" class="input-radio"  >Difícil</label>
+				<label ><input type="radio" name="navegarSitio"  value="muyDificil"  class="input-radio" >Muy difícil</label>
+			</div>
+			<div class="form-group">
+				<p>En una escala de 0 a 5, ¿qué tan fácil de usar es nuestro sitio web?</p>
+				<label ><input type="radio" name="puntajeSitio"  value="uno" class="input-radio" >1</label>
+				<label ><input type="radio" name="puntajeSitio"  value="dos"  class="input-radio" >2</label>
+				<label ><input type="radio" name="puntajeSitio"  value="tres" class="input-radio" >3</label>
+				<label ><input type="radio" name="puntajeSitio"  value="cuatro" class="input-radio" >4</label>
+				<label ><input type="radio" name="puntajeSitio"  value="cinco"  class="input-radio" checked>5</label>	
+			</div>
+			<div class="form-group">
+				<p>¿Con que frecuencia ves programas de television?</p>
+				<select name="frec-tv" id="dropdown" class="form-control" required>
+					<option  disabled selected value>Seleccione una opción</option>
+					<option value="extremadaFrecuencia">Con extremada frecuencia</option>
+					<option value="muchaFrecuencia">Con mucha frecuencia</option>
+					<option value="algunaFrecuencia">Con alguna frecuencia</option>
+					<option value="ningunaFrecuencia">Con ninguna frecuencia</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>¿Cuales son tus tipos de programas de television favoritos?<span class="pista">Marque todo lo que corresponda</span></p>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="acción-aventura">Acción/Aventura
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="comedia">Comedia
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="documental">Documental
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="drama">Drama
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="terror">Terror
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="musical">Musical
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="suspenso">Suspenso
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="noticias">Noticias
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="reality-shows">Reality shows
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="programas-de-juegos">Programas de juegos
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="deportes">Deportes
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="cocina-Comida">Cocina/Comida
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="ciencia-ficción">Ciencia ficción
+				</label>
+				<label>
+					<input type="checkbox" name="favorito" class="input-checkbox" value="otro">Otro (por favor, especifica)
+				</label>
+				<textarea id="espicificaTipos" name="especificaTipo" class="input-textarea" placeholder="Ingrese su tipo favorito aquí"></textarea>
+				</div>
+			<div class="form-group">
+				<p>¿Algun comentario o sugerencia?</p>
+				<textarea name="comentario" id="comentarios" cols="30" rows="10" placeholder="Ingrese su comentario aquí" class="input-textarea"></textarea>
+			</div>
+
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
